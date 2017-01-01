@@ -50,5 +50,22 @@ cacheSolve <- function(x, ...) {
 ##  dim(test_matrix) <- c(2,2)
 ##  x <- makeCacheMatrix(test_matrix)
 ##  cacheSolve(x)
-##
 
+
+## The following, copied from the R-Studio console, show this in action:
+## > test_matrix <- c(2,3,5,7)
+## > dim(test_matrix) <- c(2,2)
+## > test_matrix
+##      [,1] [,2]
+## [1,]    2    5
+## [2,]    3    7
+## > solve(test_matrix)
+##      [,1] [,2]
+## [1,]   -7    5
+## [2,]    3   -2
+## > x <- makeCacheMatrix(test_matrix)
+## > cacheSolve(x)
+##      [,1] [,2]
+## [1,]   -7    5
+## [2,]    3   -2
+## > 
